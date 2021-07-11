@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="card">
+				<div class="inner-box" id="card">
+					<div class="card-front">
+						
+						<h2>LOGIN</h2>
+						<hr>
+						<br>
+						<form method="post" action="#">
+
+							<input type="email" class="input-box" placeholder="Enter your email" required>
+							<input type="password" class="input-box" placeholder="Enter your password" required>
+							<button type="submit" class="submit-btn">Submit</button>
+							<input type="checkbox" class="btn" name=""><span>Remember me</span>
+						</form>
+
+						<button type="button" class="btn" onclick="openSignup()">I'M NEW</button>
+						<a href="">Forgot password</a>
+
+					</div>
+					<div class="card-back">
+						
+						<h2>SIGNUP</h2>
+						<hr>
+						<form method="post" action="#">
+							<input type="text" class="input-box" placeholder="Enter your full name" required>
+							<input type="text" class="input-box" placeholder="Enter your Username" required>
+							<input type="email" class="input-box" placeholder="Enter your email" required>
+							<input type="password" class="input-box" placeholder="Enter your password" required>
+							<button type="submit" class="submit-btn">Submit</button>
+							<input type="checkbox" class="btn" name=""><span>Remember me</span>
+						</form>
+
+						<button type="button" class="btn" onclick="openLogin()">I'M HAVE ACCOUNT</button>
+						<a href="">Forgot password</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script>
+			var card = document.getElementById("card");
+
+			function openSignup(){
+				card.style.transform = "rotateY(-180deg)";
+
+			}
+			function openLogin(){
+				card.style.transform = "rotateY(180deg)";
+
+			}
+
+
+		</script>
+
+	</body>
+</html>
